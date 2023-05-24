@@ -2,11 +2,11 @@
 #include <iostream>
 
 int main() {
-  Clock_Machine mcdonalds;
+  Clock_Machine company;
   int option;
 
   while (true) {
-    std::cout << "McDonald's Clock Machine" << std::endl;
+    std::cout << "Company's Clock Machine" << std::endl;
     std::cout << "-----------------------" << std::endl;
     std::cout << "1. Clock-In" << std::endl;
     std::cout << "2. Clock-Out" << std::endl;
@@ -18,21 +18,21 @@ int main() {
     std::cin.ignore();
 
     if (option == 1) {
-      mcdonalds.clock_in();
+      company.clock_in();
     }
     if (option == 2) {
-      mcdonalds.clock_out();
+      company.clock_out();
     }
     if (option == 3) {
-      mcdonalds.take_breaks();
+      company.take_breaks();
     }
     if (option == 4) {
-      mcdonalds.end_break();
+      company.end_break();
     }
     if (option == 0) {
       break;
     }
-    mcdonalds.display();
+    company.display();
     std::cout << std::endl;
   }
 
